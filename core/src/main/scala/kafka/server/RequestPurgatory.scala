@@ -137,7 +137,6 @@ abstract class RequestPurgatory[T <: DelayedRequest, R](brokerId: Int = 0, purge
    */
   private class Watchers {
 
-
     private val requests = new util.ArrayList[T]
 
     def numRequests = requests.size
